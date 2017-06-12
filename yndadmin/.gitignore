@@ -1,0 +1,16 @@
+.env
+.asscache
+.gradle
+gradle/caches
+gradle/native
+gradle/wrapper/dists
+.idea
+.directory
+build
+out
+target
+classes
+grails-app/conf/application-*.yml
+*.log
+/lib
+src/main/webapp/build.properties
