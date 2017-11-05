@@ -1,0 +1,8 @@
+import com.ynd.rest.Todo
+
+model {
+	Todo todo
+}
+
+
+json tmpl.todo(todo)

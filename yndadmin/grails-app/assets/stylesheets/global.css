@@ -1,0 +1,321 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.container, .container-fluid {
+    max-width: none !important;
+}
+
+html {
+    min-height: 100%;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.login {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4345a8+0,ffffff+100&1+0,0.01+100 */
+    background: -moz-linear-gradient(top, rgba(67, 69, 168, 1) 0%, rgba(255, 255, 255, 0.01) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(67, 69, 168, 1) 0%, rgba(255, 255, 255, 0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(67, 69, 168, 1) 0%, rgba(255, 255, 255, 0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4345a8', endColorstr='#03ffffff', GradientType=0); /* IE6-9 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*background: #f1f1f1;*/
+    background: #ffffff;
+    font-size: 13px;
+}
+
+input, select {
+    height: 30px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.panel-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.panel-title a {
+    width: 100%;
+    display: inline-block;
+    color: #000000;
+}
+
+.panel-title a:hover, .panel-title a:focus {
+    text-decoration: none;
+    color: #000000;
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
+}
+
+#table-list.dataTable thead th, #table-list.dataTable thead td {
+    padding: 0 10px;
+    line-height: 1;
+    border-color: #ddd;
+    border-bottom: transparent;
+}
+
+#table-list.dataTable tbody th, #table-list.dataTable tbody td {
+    padding: 0 10px;
+    line-height: 1;
+}
+
+#table-list_wrapper {
+    margin-bottom: 20px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.form-control {
+    height: 28px;
+    font-size: 13px;
+    padding: 3px 12px;
+}
+
+.navbar .container {
+    width: auto;
+}
+
+.action-container {
+    float: right;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/*
+    Pannel styling
+*/
+.panel-default > .blue-header {
+    /*background: #3755a4;*/
+    color: #ffffff;
+    /*background: #002b68;*/
+    background: #ededed;
+}
+
+.panel-body input {
+    margin-bottom: 15px;
+}
+
+.panel-body label {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.panel-body .btn-container {
+    /*text-align: center;*/
+    /*padding: 0 5px;*/
+    text-align: right;
+    padding: 0 15px;
+}
+
+/*
+    Data table styling
+*/
+.dataTables_filter input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 28px;
+}
+
+.dataTables_length select[multiple], select[size] {
+    height: 28px;
+}
+
+/*:root {*/
+/*--main-bg-color: #5f46af;*/
+/*}*/
+/*:root {*/
+/*--main-text-color: #fff;*/
+/*}*/
+/*:root {*/
+/*--main-hover-color: #7c6ab7;*/
+/*}*/
+
+/*
+    Styling for footer section
+*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    /*background: #f1f1f1;*/
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+    clear: both;
+}
+
+.back-container a {
+    font-size: 23px;
+    text-decoration: none;
+    top: 4px
+}
+
+.white-anchor, .white-anchor:hover {
+    color: #ffffff !important;
+}
+
+.status-section {
+    list-style: none;
+    display: inline-block;
+    float: right;
+    text-align: left;
+    padding-top: 5px;
+
+}
+
+.login-error-message {
+    color: orange;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/*
+    Styling of card section
+*/
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.card-header {
+    display: block;
+    overflow: hidden;
+}
+
+.card-header h4 {
+    border-bottom: 1px solid;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+.card-body a {
+    color: #000;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/*
+    page not found
+*/
+.page-not-found {
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+}
+
+.error-text {
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+}
+
+.sorry-message {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 20px 0 17px;
+}
+
+.previous-page {
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.previous-page > a {
+    display: block;
+    font-size: 14px;
+    color: #ffff00;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+.error-404 {
+    max-width: 300px;
+    display: inline-block;
+    margin: 100px 0;
+    width: 100%;
+}
+
+.button-alignment {
+    text-align: center;
+}
+
+.page-header {
+    width: 100%;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+input#isApproved {
+    margin-top: -5px;
+}
+
+.check-box-outline {
+    outline: none !important;
+}
+
+.vertical-pane-tab-min-height {
+    min-height: 535px;
+}
+
+.audit-tab-bottom {
+    min-height: 75px;
+    margin-top: 20px;
+}
+
+.content-validity-margin {
+    margin: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+
+.content-validity-padding {
+    padding-left: 72px;
+}
+
+select.error {
+    color: #555 !important;
+}
+
+.padding0 {
+    padding: 0 !important;
+}
+
+.mrgnBtm20 {
+    margin-bottom: 20px !important;
+}
+
+.edit-customer-buttons {
+    margin-bottom: 70px;
+}
+
+.width98 {
+    width: 98%;
+}
+
+a:focus, a:hover {
+    color: #23527c !important;
+}

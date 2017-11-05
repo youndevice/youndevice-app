@@ -4,7 +4,7 @@ import grails.test.mixin.*
 import spock.lang.*
 
 @TestFor(DeviceController)
-@Mock(Device)
+@Mock(com.ynd.core.Device)
 class DeviceControllerSpec extends Specification {
 
     def populateValidParams(params) {
@@ -38,7 +38,7 @@ class DeviceControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def device = new Device()
+            def device = new com.ynd.core.Device()
             device.validate()
             controller.save(device)
 
@@ -49,14 +49,14 @@ class DeviceControllerSpec extends Specification {
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            device = new Device(params)
+            device = new com.ynd.core.Device(params)
 
             controller.save(device)
 
         then:"A redirect is issued to the show action"
             response.redirectedUrl == '/device/show/1'
             controller.flash.message != null
-            Device.count() == 1
+            com.ynd.core.Device.count() == 1
     }
 
     void "Test that the show action returns the correct model"() {
@@ -68,7 +68,7 @@ class DeviceControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def device = new Device(params)
+            def device = new com.ynd.core.Device(params)
             controller.show(device)
 
         then:"A model is populated containing the domain instance"
@@ -84,7 +84,7 @@ class DeviceControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def device = new Device(params)
+            def device = new com.ynd.core.Device(params)
             controller.edit(device)
 
         then:"A model is populated containing the domain instance"
@@ -103,7 +103,7 @@ class DeviceControllerSpec extends Specification {
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def device = new Device()
+            def device = new com.ynd.core.Device()
             device.validate()
             controller.update(device)
 
@@ -114,7 +114,7 @@ class DeviceControllerSpec extends Specification {
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            device = new Device(params).save(flush: true)
+            device = new com.ynd.core.Device(params).save(flush: true)
             controller.update(device)
 
         then:"A redirect is issued to the show action"
@@ -136,16 +136,16 @@ class DeviceControllerSpec extends Specification {
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def device = new Device(params).save(flush: true)
+            def device = new com.ynd.core.Device(params).save(flush: true)
 
         then:"It exists"
-            Device.count() == 1
+            com.ynd.core.Device.count() == 1
 
         when:"The domain instance is passed to the delete action"
             controller.delete(device)
 
         then:"The instance is deleted"
-            Device.count() == 0
+            com.ynd.core.Device.count() == 0
             response.redirectedUrl == '/device/index'
             flash.message != null
     }

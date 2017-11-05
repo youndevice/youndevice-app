@@ -1,4 +1,3 @@
-//include "youndevice-admin"
 include "yndadmin"
-include "yndrest"
+include "yndweb"
 include "yndcore"

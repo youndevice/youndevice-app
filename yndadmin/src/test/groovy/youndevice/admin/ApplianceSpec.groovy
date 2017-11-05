@@ -6,7 +6,7 @@ import spock.lang.Specification
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
  */
-@TestFor(Appliance)
+@TestFor(com.ynd.core.Appliance)
 class ApplianceSpec extends Specification {
 
     def setup() {

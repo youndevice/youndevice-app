@@ -1,0 +1,333 @@
+/*from Global css*/
+@media (min-width: 1200px) {
+    .container-fluid {
+        width: 1170px;
+    }
+}
+
+/*from Style.css*/
+
+@media screen and (max-width: 767px) {
+    .select_btn_inline {
+        margin: 8px 0 0 0;
+        text-align: center;
+    }
+
+    #btnLeft, #btnRight {
+        margin: 5px 0;
+    }
+
+    .btn-container {
+        text-align: center;
+    }
+
+    .panel-body .btn-container {
+        text-align: center;
+    }
+
+    .image-block {
+        display: inline-block;
+    }
+
+    .well {
+        padding: 19px 10px;
+    }
+
+    .dtmc-module li, .dtmc-module li:last-child {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 10px 0 0;
+        margin: 10px auto;
+    }
+
+}
+
+@media screen and (min-width: 380px) {
+    .application-services-small {
+        display: block;
+    }
+}
+
+@media screen and (min-device-width: 319px) and (max-device-width: 480px) {
+    .quick-actions select, .quick-actions input {
+        width: 100%;
+    }
+
+    .quick-actions .btn {
+        float: right;
+    }
+
+    .m-pdng0 {
+        padding: 20px 0;
+    }
+
+    .m-mrgnBtm {
+        margin-bottom: 15px;
+    }
+
+    .heading {
+        margin-bottom: 12px;
+    }
+
+    .lft-txt {
+        text-align: left;
+        padding-left: 15px;
+        margin-bottom: 4px;
+    }
+
+    .btm-scrl {
+        overflow-x: scroll !important;
+    }
+
+    .form-control {
+        padding: 3px 5px !important;
+    }
+
+    .set-postn {
+        margin-left: -17px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-left > li > a {
+        padding: 15px 25px;
+    }
+
+    .dtci-dashboard .navbar-left > li > a {
+        padding: 15px;
+    }
+
+    .panel-body label.col-md-2 {
+        width: 15%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .btn-container {
+        padding-left: 9px;
+    }
+
+    .admin-details {
+        margin-left: 13%;
+        flex-wrap: wrap;
+    }
+
+    .panel-body label.col-md-2 {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #table-list_wrapper.dataTables_wrapper .dataTables_length,
+    #table-list_wrapper.dataTables_wrapper .dataTables_filter,
+    #table-list_wrapper.dataTables_wrapper .dataTables_info,
+    #table-list_wrapper.dataTables_wrapper .dataTables_paginate {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .dropdown-submenu > a::after {
+        border-color: #ccc transparent transparent !important;
+        border-width: 5px 5px 0 !important;
+        content: " ";
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar {
+        border-radius: 4px;
+        min-width: 400px;
+    }
+
+    .nav-tabs-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .nav-tabs-justified > .active > a,
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+
+    .nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .navbar-right .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+
+    .navbar-right .dropdown-menu-left {
+        right: auto;
+        left: 0;
+    }
+
+    .container {
+        min-width: 400px;
+    }
+
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+
+    .navbar-collapse.in {
+        overflow-y: visible;
+    }
+
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .navbar-static-top {
+        border-radius: 0;
+    }
+
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+
+    .navbar-nav > li {
+        float: left;
+    }
+
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-left {
+        float: left !important;
+    }
+
+    .navbar-right {
+        float: right !important;
+    }
+
+    .navbar-form .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .navbar-form .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+
+    .navbar-form .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .navbar-form .radio,
+    .navbar-form .checkbox {
+        display: inline-block;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .navbar-form .radio input[type="radio"],
+    .navbar-form .checkbox input[type="checkbox"] {
+        float: none;
+        margin-left: 0;
+    }
+
+    .navbar-form .has-feedback .form-control-feedback {
+        top: 0;
+    }
+
+    .navbar-form {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .navbar-form.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .navbar-text.navbar-right:last-child {
+        margin-right: 0;
+    }
+}

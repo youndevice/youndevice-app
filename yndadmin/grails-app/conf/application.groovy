@@ -1,15 +1,17 @@
 
 
 // Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'youndevice.admin.AdminUser'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'youndevice.admin.AdminUserAdminRole'
-grails.plugin.springsecurity.authority.className = 'youndevice.admin.AdminRole'
+grails.plugin.springsecurity.logout.postOnly = false
+grails.plugin.springsecurity.userLookup.userDomainClassName = 'com.ynd.core.AdminUser'
+grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'com.ynd.core.AdminUserAdminRole'
+grails.plugin.springsecurity.authority.className = 'com.ynd.core.AdminRole'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/',               access: ['permitAll']],
+	[pattern: '/admin/**',       access: ['ROLE_ADMIN']],
 	[pattern: '/error',          access: ['permitAll']],
 	[pattern: '/index',          access: ['ROLE_ADMIN']],
-	[pattern: '/device/**',          access: ['ROLE_ADMIN']],
-	[pattern: '/appliance/**',          access: ['ROLE_ADMIN']],
+	[pattern: '/adminDevice/**',      access: ['ROLE_ADMIN']],
+	[pattern: '/adminAppliance/**',   access: ['ROLE_ADMIN']],
 	[pattern: '/index.gsp',      access: ['ROLE_ADMIN']],
 	[pattern: '/shutdown',       access: ['permitAll']],
 	[pattern: '/assets/**',      access: ['permitAll']],

@@ -4,7 +4,7 @@ import grails.test.mixin.*
 import spock.lang.*
 
 @TestFor(ApplianceController)
-@Mock(Appliance)
+@Mock(com.ynd.core.Appliance)
 class ApplianceControllerSpec extends Specification {
 
     def populateValidParams(params) {
@@ -38,7 +38,7 @@ class ApplianceControllerSpec extends Specification {
         when:"The save action is executed with an invalid instance"
             request.contentType = FORM_CONTENT_TYPE
             request.method = 'POST'
-            def appliance = new Appliance()
+            def appliance = new com.ynd.core.Appliance()
             appliance.validate()
             controller.save(appliance)
 
@@ -49,14 +49,14 @@ class ApplianceControllerSpec extends Specification {
         when:"The save action is executed with a valid instance"
             response.reset()
             populateValidParams(params)
-            appliance = new Appliance(params)
+            appliance = new com.ynd.core.Appliance(params)
 
             controller.save(appliance)
 
         then:"A redirect is issued to the show action"
             response.redirectedUrl == '/appliance/show/1'
             controller.flash.message != null
-            Appliance.count() == 1
+            com.ynd.core.Appliance.count() == 1
     }
 
     void "Test that the show action returns the correct model"() {
@@ -68,7 +68,7 @@ class ApplianceControllerSpec extends Specification {
 
         when:"A domain instance is passed to the show action"
             populateValidParams(params)
-            def appliance = new Appliance(params)
+            def appliance = new com.ynd.core.Appliance(params)
             controller.show(appliance)
 
         then:"A model is populated containing the domain instance"
@@ -84,7 +84,7 @@ class ApplianceControllerSpec extends Specification {
 
         when:"A domain instance is passed to the edit action"
             populateValidParams(params)
-            def appliance = new Appliance(params)
+            def appliance = new com.ynd.core.Appliance(params)
             controller.edit(appliance)
 
         then:"A model is populated containing the domain instance"
@@ -103,7 +103,7 @@ class ApplianceControllerSpec extends Specification {
 
         when:"An invalid domain instance is passed to the update action"
             response.reset()
-            def appliance = new Appliance()
+            def appliance = new com.ynd.core.Appliance()
             appliance.validate()
             controller.update(appliance)
 
@@ -114,7 +114,7 @@ class ApplianceControllerSpec extends Specification {
         when:"A valid domain instance is passed to the update action"
             response.reset()
             populateValidParams(params)
-            appliance = new Appliance(params).save(flush: true)
+            appliance = new com.ynd.core.Appliance(params).save(flush: true)
             controller.update(appliance)
 
         then:"A redirect is issued to the show action"
@@ -136,16 +136,16 @@ class ApplianceControllerSpec extends Specification {
         when:"A domain instance is created"
             response.reset()
             populateValidParams(params)
-            def appliance = new Appliance(params).save(flush: true)
+            def appliance = new com.ynd.core.Appliance(params).save(flush: true)
 
         then:"It exists"
-            Appliance.count() == 1
+            com.ynd.core.Appliance.count() == 1
 
         when:"The domain instance is passed to the delete action"
             controller.delete(appliance)
 
         then:"The instance is deleted"
-            Appliance.count() == 0
+            com.ynd.core.Appliance.count() == 0
             response.redirectedUrl == '/appliance/index'
             flash.message != null
     }
