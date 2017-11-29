@@ -63,5 +63,6 @@ class Customer implements Serializable {
 
 	static mapping = {
 		password column: '`password`'
+		enabled sqlType: "tinyint(1)", defaultValue: "0"
 	}
 }

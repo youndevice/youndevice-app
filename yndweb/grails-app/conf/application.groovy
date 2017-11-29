@@ -44,6 +44,7 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 ]
 
 grails {
+	serverURL = System.getenv('SERVER_URL') ?:  "http://localhost:9090"
 	mail {
 		host = System.getenv('MAIL_HOST') ?: "smtp.gmail.com"
 		port = System.getenv('MAIL_PORT') ?: 465

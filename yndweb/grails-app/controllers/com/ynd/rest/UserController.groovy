@@ -46,8 +46,9 @@ class UserController {
         if (authCode) {
             Customer user = Customer.findByToken(authCode)
             if (user) {
+                user.token = null
                 user.enabled = true
-                user.save(failOnError: true)
+                user.save(flush:true,failOnError: true)
                 isAuthenticated = true
             } else {
                 message = "Invalid Auth Code."

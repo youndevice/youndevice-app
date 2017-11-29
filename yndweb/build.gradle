@@ -69,3 +69,9 @@ grails {
         compile project(":yndcore")
     }
 }
+
+//springBoot {
+    // Enable the creation of a fully
+    // executable archive file.
+//    executable = true
+//}
