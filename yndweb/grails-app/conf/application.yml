@@ -59,6 +59,8 @@ grails:
 
 ---
 hibernate:
+    flush:
+        mode: AUTO
     cache:
         queries: false
         use_second_level_cache: true
@@ -108,5 +110,4 @@ environments:
 
 server:
     port: 9090
-#    contextPath: '/dtci'
     display-name: "YnD Rest"

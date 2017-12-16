@@ -28,12 +28,12 @@ class UserDeviceController {
                 flash.success = 'device is successfully added to user'
                 device.userFriendlyName = userFriendlyName
                 user.addToDevices(device)
-                user.save(failOnError: true)
+                user.save(failOnError: true,flush:true)
             }else{
                 flash.error = "Invalid Device Id"
             }
         } else {
-            flash.error = "This device is already added"x
+            flash.error = "This device is already added"
         }
         redirect(controller: 'userDevice', action: 'addDevice')
     }

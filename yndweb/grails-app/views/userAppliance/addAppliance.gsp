@@ -23,7 +23,7 @@
             <label class="col-md-4 control-label" for="category">Appliance Category</label>
 
             <div class="col-md-4">
-                <g:select class="form-control" from="${com.youndevice.core.enums.ApplianceCategory.values()}"
+                <g:select class="form-control" from="${com.ynd.core.enums.ApplianceCategory.values()}"
                           name="category" value="${appliance.category}"/>
             </div>
         </div>
