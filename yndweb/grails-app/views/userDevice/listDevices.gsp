@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="user"/>
-    <title>Welcome to Grails</title>
+    <title>Welcome to YouNDevice</title>
 
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico"/>
 

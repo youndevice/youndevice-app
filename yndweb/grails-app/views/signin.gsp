@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to You N Device</title>
+    <title>Welcome to YouNDevice</title>
 
     <asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
 </head>
@@ -36,21 +36,12 @@
                                 <p class="help-block">(if this is a private computer)</p>
                             </div>
                             <button type="submit" class="btn btn-success btn-block">Login</button>
-                            <a href="/forgot/" class="btn btn-default btn-block">Help to login</a>
+                            <g:link uri="/register" class="btn btn-danger btn-block">Create Account</g:link>
                         </g:form>
                     </div>
                 </div>
-                <div class="col-xs-6">
-                    <p class="lead">Register now for <span class="text-success">FREE</span></p>
-                    <ul class="list-unstyled" style="line-height: 2">
-                        <li><span class="fa fa-check text-success"></span> See all your orders</li>
-                        <li><span class="fa fa-check text-success"></span> Fast re-order</li>
-                        <li><span class="fa fa-check text-success"></span> Save your favorites</li>
-                        <li><span class="fa fa-check text-success"></span> Fast checkout</li>
-                        <li><span class="fa fa-check text-success"></span> Get a gift <small>(only new customers)</small></li>
-                        <li><a href="/read-more/"><u>Read more</u></a></li>
-                    </ul>
-                    <p><a href="/register" class="btn btn-info btn-block">Yes please, register now!</a></p>
+                <div class="col-xs-6" id="img-container">
+                    <asset:image src="ynd_logo_black.png" height="260"/>
                 </div>
             </div>
         </div>
